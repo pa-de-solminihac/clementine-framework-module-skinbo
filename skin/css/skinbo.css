@@ -103,18 +103,8 @@ p {
 .logo {
     font-size: 24px;
     width: 100%;
-    text-align: right;
+    text-align: center;
     margin: 20px 0 0 0;
-}
-.logo > a {
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    padding-right: 15px;
-}
-.logo > a:hover {
-    text-decoration: underline;
-    text-shadow: 0 0 15px #FFF;
 }
 .logo > .langue {
     width: 100%;
@@ -131,15 +121,10 @@ p {
 .deconnexion {
     margin: 50px 0 0 0;
     font-size: 11px;
-    text-align: right;
+    padding: 0 5px 0 0;
 }
 .deconnexion a {
     color: #fff;
-    display: inline-block;
-    padding-right: 15px;
-}
-.deconnexion a:hover {
-    text-shadow: 0 0 5px #FFF;
 }
 #main-nav {
     margin: 50px 0 0 0;
@@ -171,8 +156,7 @@ p {
 #main-nav li ul li a:hover, #main-nav li ul li a.current {
     background: none;
     font-weight: bold;
-    text-shadow: 0 0 5px #532e64;
-    color: #FFF;
+    color: #532e64;
 }
 
 /* colonne de droite */
