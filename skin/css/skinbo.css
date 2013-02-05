@@ -54,10 +54,11 @@ table {
 
 /* Skin debug Clementine */
 #Clementine_debug_div {
-    border: solid #AAA 1px;
     position: absolute;
-    right: 10px;
     z-index: 999;
+    right: 5px;
+    top: 5px;
+    max-width: 40%;
 }
 /* skinbo */
 html {
@@ -70,12 +71,7 @@ body {
 }
 a {
     color: #532e64;
-}
-td a {
     text-decoration: none;
-}
-td a:hover {
-    text-decoration: underline;
 }
 p {
     line-height: 1.6em;
@@ -103,18 +99,8 @@ p {
 .logo {
     font-size: 24px;
     width: 100%;
-    text-align: right;
+    text-align: center;
     margin: 20px 0 0 0;
-}
-.logo > a {
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    padding-right: 15px;
-}
-.logo > a:hover {
-    text-decoration: underline;
-    text-shadow: 0 0 15px #FFF;
 }
 .logo > .langue {
     width: 100%;
@@ -131,15 +117,10 @@ p {
 .deconnexion {
     margin: 50px 0 0 0;
     font-size: 11px;
-    text-align: right;
+    padding: 0 5px 0 0;
 }
 .deconnexion a {
     color: #fff;
-    display: inline-block;
-    padding-right: 15px;
-}
-.deconnexion a:hover {
-    text-shadow: 0 0 5px #FFF;
 }
 #main-nav {
     margin: 50px 0 0 0;
@@ -171,8 +152,7 @@ p {
 #main-nav li ul li a:hover, #main-nav li ul li a.current {
     background: none;
     font-weight: bold;
-    text-shadow: 0 0 5px #532e64;
-    color: #FFF;
+    color: #532e64;
 }
 
 /* colonne de droite */
@@ -388,7 +368,6 @@ form .wysiwyg {
 .clementine_cms_contenu_params input {
     padding: 3px;
     margin: 3px 0 0px 0;
-    width: 170px;
 }
 
 form .small-input {
@@ -556,8 +535,8 @@ ul.content-box-tabs li a.current {
 }
 
 /* skin du module users */
-div.form_users_create .col_submit,
-div.form_users_edit .col_submit {
+div.form_users_create .col4,
+div.form_users_edit .col4 {
     display: none;
 }
 div.form_users_index a.form_users_index_add {
@@ -568,7 +547,7 @@ div.form_users_index a.form_users_index_add {
 .contenus_index_list .col2 {
     width: 250px;
 }
-.clementine_users_index .col_actions,
+.clementine_users_index .col2,
 .pages_index_list .col3,
 .contenus_index_list .col3 {
     width: 100px;
@@ -646,43 +625,4 @@ div.form_users_index a.form_users_index_add {
 
 .euro{
     display:none;
-}
-
-/* présentation propre des listes de termes et définitions */
-dl dt,
-dl dd {
-    margin: 0 0.5em 0 0;
-    font-weight: bold;
-    line-height: 1.6em;
-}
-dl dt {
-    padding: 0 0 0 15px;
-}
-dl dt:before {
-    content: "";
-}
-dl {
-    margin: 1em 0;
-}
-dl dt {
-    float: left;
-    clear: both;
-    font-weight: bold;
-}
-dl dt:before {
-    content: "• ";
-}
-dl dt:after {
-    content: " : ";
-}
-dl dd {
-    font-weight: normal;
-}
-
-.nav-top-item:after {
-    content: " ›";
-}
-
-.nav-top-item.no-submenu:after {
-    content: "";
 }
