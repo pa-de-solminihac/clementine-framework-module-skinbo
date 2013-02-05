@@ -1,5 +1,4 @@
 <?php 
-if (!$data['return_json']) {
     $arr = array("active" => "users", "current" => "users");
     $this->getBlock('design/header-admin', $arr);
 ?>
@@ -22,13 +21,10 @@ if (!$data['return_json']) {
     <div class="content-box-content">
 
 <?php
-}
-$this->getParentBlock($data);
-if (!$data['return_json']) {
+    $this->getParentBlock($data);
 ?>
     </div>
 </div>
 <?php
     $this->getBlock('design/footer-admin', $data);
-}
 ?>
