@@ -1,12 +1,11 @@
 <?php 
-if (!$data['return_json']) {
     $arr = array("active" => "users", "current" => "users");
     $this->getBlock('design/header-admin', $arr);
 ?>
 <h1>Gestion des utilisateurs</h1>
 <ul class="shortcut-buttons-set">
     <li>
-        <a class="shortcut-button form_users_index_add" href="<?php echo __WWW__; ?>/users/create">
+        <a class="shortcut-button" href="<?php echo __WWW__; ?>/users/create">
             <span>
                 <img alt="icon" src="<?php echo __WWW_ROOT_SKINBO__; ?>/skin/images/icons/add.png" />
                 <br/>Ajouter un utilisateur
@@ -22,13 +21,10 @@ if (!$data['return_json']) {
     <div class="content-box-content">
 
 <?php
-}
-$this->getParentBlock($data);
-if (!$data['return_json']) {
+    $this->getParentBlock($data);
 ?>
     </div>
 </div>
 <?php
     $this->getBlock('design/footer-admin', $data);
-}
 ?>
