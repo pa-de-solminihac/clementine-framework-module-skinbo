@@ -1,5 +1,5 @@
 <?php
-if (!$request->AJAX) {
+if (!$request['AJAX']) {
 ?>
             </div>
             <div class="spacer"></div>
