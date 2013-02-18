@@ -75,7 +75,7 @@ jQuery(document).ready(function() {
     // Initialise Colorbox Modal window:
     jQuery('a[rel*=modal]').colorbox({
         rel:'nofollow',
-        scrolling:'',
+        scrolling:'yes',
         opacity:'0.7'
     }, function() {
         jQuery('.clementine_cms_contenu_add_param_button').click(function() {
